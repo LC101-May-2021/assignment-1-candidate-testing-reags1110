@@ -57,9 +57,9 @@ function gradeQuiz(candidateAnswers) {
 
 console.log(`>>> Final Score: ${grade} % (${candidateScore} / ${maxScore} were Correct)<<< `);
   if (grade >= 80) {
-    console.log(`>>> Congratulations! You PASSED!!! <<<`);
+    console.log(`Congratulations! You PASSED!!!`);
   } else {
-    console.log(">>> Sorry, you have FAILED! <<<")
+    console.log("Sorry, you have FAILED!")
   }
   return grade;
   }
@@ -70,7 +70,7 @@ function runProgram() {
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
-
+console.log(gradeQuiz);
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
