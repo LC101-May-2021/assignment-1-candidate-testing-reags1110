@@ -55,7 +55,7 @@ function gradeQuiz(candidateAnswers) {
 
   let grade = candidateScore / maxScore * 100;
 
-console.log(`>>> Final Score: ${grade} % (${candidateScore} / ${maxScore} were Correct)<<< `);
+console.log(`>>> Final Score: ${grade} % (${candidateScore} / ${maxScore} were Correct) <<< `);
   if (grade >= 80) {
     console.log(`Congratulations! You PASSED!!!`);
   } else {
@@ -68,9 +68,9 @@ function runProgram() {
   askForName();
   console.log(`Hello ${name}!` );
   askQuestion();
-  gradeQuiz(this.candidateAnswers);
+  gradeQuiz(candidateAnswers);
 }
-console.log(gradeQuiz);
+
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
